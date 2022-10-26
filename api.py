@@ -37,5 +37,8 @@ class S3Client:
     def upload_file_obj(self, key, file_rb):
         self.client.upload_fileobj(Fileobj=file_rb, Bucket=self.bucket, Key=key)
 
+    def download_file(self, key, filename):
+        self.client.download_file(Bucket=self.bucket, Key=key, Filename=filename)
+
     def delete_file(self, key):
         self.client.delete_object(Bucket=self.bucket, Key=key)
