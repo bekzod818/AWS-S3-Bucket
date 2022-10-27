@@ -24,6 +24,9 @@ class S3Client:
                                                    Fields=fields or {},
                                                    Conditions=conditions or [],
                                                    ExpiresIn=expires_in)
+    
+    def get_bucket_policy(self):
+        return self.client.get_bucket_policy(Bucket=self.bucket)['Policy']
 
     def put_bucket_policy(self, policy_string):
         return self.client.put_bucket_policy(
