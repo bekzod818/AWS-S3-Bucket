@@ -18,7 +18,8 @@ ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER_BUCKET_POLICY = {
                 f"arn:aws:s3:::{BUCKET_NAME}/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*.XLS",
                 f"arn:aws:s3:::{BUCKET_NAME}/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*.xlsx",
                 f"arn:aws:s3:::{BUCKET_NAME}/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*.XLSX",
-                f"arn:aws:s3:::{BUCKET_NAME}/test/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*"
+                f"arn:aws:s3:::{BUCKET_NAME}/test/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*",
+                f"arn:aws:s3:::{BUCKET_NAME}/media/*"
             ],
             "Principal": "*",
         },
@@ -31,7 +32,8 @@ ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER_BUCKET_POLICY = {
             ],
             "Resource": [
                 f"arn:aws:s3:::{BUCKET_NAME}/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*",
-                f"arn:aws:s3:::{BUCKET_NAME}/test/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*"
+                f"arn:aws:s3:::{BUCKET_NAME}/test/{SHOP_ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER}/*",
+                f"arn:aws:s3:::{BUCKET_NAME}/media/*"
             ]
         }
     ]

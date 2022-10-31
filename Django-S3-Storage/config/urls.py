@@ -19,5 +19,5 @@ from documents.views import DocumentCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', DocumentCreateView.as_view())
+    path('', DocumentCreateView.as_view(), name="home")
 ]

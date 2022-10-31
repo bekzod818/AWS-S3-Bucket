@@ -16,9 +16,9 @@ client = S3Client()
 # print('Downloaded successfully')
 
 # Bucket Policy
-# json_string = json.dumps(ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER_BUCKET_POLICY)
-# client.put_bucket_policy(policy_string=json_string)
-# print('Successfully')
+json_string = json.dumps(ALL_PRODUCTS_DATA_EXCEL_FILES_FOLDER_BUCKET_POLICY)
+client.put_bucket_policy(policy_string=json_string)
+print('Successfully')
 
 
 # bucket_policy = {
@@ -44,5 +44,5 @@ client = S3Client()
 # client.delete_file(key='discord.png')
 # print('Deleted successfully')
 
-pre_signed_url = client.generate_pre_signed_url(key='test/shop/product/excel/2/products.xlsx', expires_in=3600)
-print(pre_signed_url)
+# pre_signed_url = client.generate_pre_signed_url(key='test/shop/product/excel/2/products.xlsx', expires_in=3600)
+# print(pre_signed_url)
